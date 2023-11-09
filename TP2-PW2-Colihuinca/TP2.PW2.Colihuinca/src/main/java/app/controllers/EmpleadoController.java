@@ -106,7 +106,7 @@ public class EmpleadoController extends AppController {
 
         } catch (EmpleadoException ex) {
             view("error", ex.getMessage());
-            render("error");
+            render("/empleado/error").noLayout();
         }
 
     }
